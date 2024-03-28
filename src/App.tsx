@@ -11,8 +11,11 @@ function App() {
       justifyContent: "center",
       alignItems: "center"
     }}>
-      <div style={{ width: "200px", height: "200px", overflow: "visible" }}>
-        <Spaceship />
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <h1 className="font-bold">Aliens are Coming</h1>
+        <div style={{ width: "200px", height: "200px", overflow: "visible" }}>
+          <Spaceship />
+        </div>
       </div>
     </div>
   )
