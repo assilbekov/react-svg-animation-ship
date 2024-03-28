@@ -1,8 +1,8 @@
 import { SVGProps } from "react"
 export const Spaceship = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width={1315}
-    height={1773}
+    //width={1315}
+    //height={1773}
     viewBox="0 0 1315 1773"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
