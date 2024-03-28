@@ -1,5 +1,5 @@
 import { SVGProps } from "react"
-export const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
+export const Spaceship = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={1315}
     height={1773}
