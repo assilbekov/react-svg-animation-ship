@@ -1,4 +1,6 @@
 import { SVGProps } from "react"
+import { motion } from "framer-motion";
+
 export const Spaceship = (props: SVGProps<SVGSVGElement>) => (
   <svg
     //width={1315}
@@ -56,7 +58,17 @@ export const Spaceship = (props: SVGProps<SVGSVGElement>) => (
           fill="#CCCCCC"
         />
       </g>
-      <g id="ship">
+      <motion.g
+        id="ship"
+        animate={{ y: [-40, 0, -40] }}
+        transition={{
+          times: [0, 1],
+          duration: 5,
+          repeat: Infinity,
+          type: "keyframes",
+          ease: "easeInOut"
+        }}
+      >
         <path
           id="Vector_10"
           d="M657.165 633.539C294.225 633.539 0.00390625 570.513 0.00390625 492.753V586.61C0.00390625 664.37 294.225 727.396 657.165 727.396C1020.11 727.396 1314.33 664.37 1314.33 586.61V492.753C1314.33 570.513 1020.11 633.539 657.165 633.539Z"
@@ -78,7 +90,7 @@ export const Spaceship = (props: SVGProps<SVGSVGElement>) => (
           fill="#F1F1F1"
           fillOpacity={0.26}
         />
-      </g>
+      </motion.g>
     </g>
   </svg>
 )
